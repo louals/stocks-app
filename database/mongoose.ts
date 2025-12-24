@@ -48,5 +48,5 @@ export const ConnectToDB = async() => {
         cached.promise=null // reset promise if connection failed
         throw error
     }
-    console.log("Connected to Database :",MONGODB_URI + process.env.NODE_ENV)
+    
 }

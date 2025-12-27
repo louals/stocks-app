@@ -33,8 +33,7 @@ const UserDropDown = ({user ,initialStocks}: {user:User , initialStocks:StockWit
         <DropdownMenuTrigger asChild>
         <Button variant="ghost" className="flex items-center gap-3 text-gray-400 hover:text-green-400">
             <Avatar className="h-8 w-8">
-                <AvatarImage src="https://media.licdn.com/dms/image/v2/D4E03AQEiOwCNGybkJg/profile-displayphoto-crop_800_800/B4EZqisVRvKkAI-/0/1763666122630?e=1767830400&v=beta&t=IKu4X16i2ASxFmW2QnG_Wr_thlnZbnW4h6cn1qktKMk" />
-                <AvatarFallback className="bg-green-500 text-green-900 text-sm font-bold">{user.name[0]}</AvatarFallback>
+               <AvatarFallback className="bg-green-500 text-green-900 text-sm font-bold">{user.name[0]}</AvatarFallback>
             </Avatar>
             <div className="hidden md:flex flex-col items-start">
                 <span className="text-base font-medium text-gray-400">
@@ -48,13 +47,12 @@ const UserDropDown = ({user ,initialStocks}: {user:User , initialStocks:StockWit
             <DropdownMenuLabel>
                 <div className="flex relative items-center gap-3 py-2">
                 <Avatar className="h-10 w-10">
-                    <AvatarImage src="https://media.licdn.com/dms/image/v2/D4E03AQEiOwCNGybkJg/profile-displayphoto-crop_800_800/B4EZqisVRvKkAI-/0/1763666122630?e=1767830400&v=beta&t=IKu4X16i2ASxFmW2QnG_Wr_thlnZbnW4h6cn1qktKMk" />
                     <AvatarFallback className="bg-green-500 text-green-900 text-sm font-bold">{user.name[0]}</AvatarFallback>
                 </Avatar>
                 <div className="flex flex-col">
                     <span className="text-base font-medium text-gray-400">
                     {user.name}</span>
-                    <span className="text-base font-medium text-gray-400">
+                    <span className="text-[10px] font-medium text-gray-400">
                     {user.email}</span>
                 </div>
                 </div>
@@ -73,4 +71,4 @@ const UserDropDown = ({user ,initialStocks}: {user:User , initialStocks:StockWit
   )
 }
 
-export default UserDropDown
+export default UserDropDown 

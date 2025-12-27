@@ -13,7 +13,7 @@ const Layout = async ({children}:{children : React.ReactNode}) => {
     email: session.user.email,
   }
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-black">
       <Header user={user}/>
       <div className="container py-10">
         {children}

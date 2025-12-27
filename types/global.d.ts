@@ -164,6 +164,12 @@ declare global {
         image?: string;
     };
 
+    type UserForNewsEmail = {
+        id: string;
+        name: string;
+        email: string;
+    };
+
     type WatchlistNewsProps = {
         news?: MarketNewsArticle[];
     };

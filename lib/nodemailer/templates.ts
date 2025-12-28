@@ -137,7 +137,7 @@ export const WELCOME_EMAIL_TEMPLATE = `<!DOCTYPE html>
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 0 40px 0; width: 100%;">
                                 <tr>
                                     <td align="center">
-                                        <a href="https://stock-market-dev.vercel.app/" style="display: block; width: 100%; background-color: #48bb78; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-size: 16px; font-weight: 500; line-height: 1; text-align: center; box-sizing: border-box; transition: background-color 0.3s ease;">
+                                        <a href="https://nocturn-kappa.vercel.app/" style="display: block; width: 100%; background-color: #48bb78; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-size: 16px; font-weight: 500; line-height: 1; text-align: center; box-sizing: border-box; transition: background-color 0.3s ease;">
                                             Go to Dashboard
                                         </a>
                                     </td>
@@ -148,7 +148,7 @@ export const WELCOME_EMAIL_TEMPLATE = `<!DOCTYPE html>
                             <p class="mobile-text dark-text-muted" style="margin: 40px 0 0 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important; text-align: center;">
                                Nocturn HQ, 200 Griffintown Street, Montreal, QC<br>
                                 <a href="#" style="color: #48bb78 !important; text-decoration: underline;">Unsubscribe</a> | 
-                                <a href="https://stock-market-dev.vercel.app/" style="color: #48bb78 !important; text-decoration: underline;">Visit Nocturn</a><br>
+                                <a href="https://nocturn-kappa.vercel.app/" style="color: #48bb78 !important; text-decoration: underline;">Visit Nocturn</a><br>
                                 © 2025 Nocturn
                             </p>
                         </td>
@@ -285,7 +285,7 @@ export const NEWS_SUMMARY_EMAIL_TEMPLATE = `<!DOCTYPE html>
                                 <p style="margin: 0 0 15px 0; font-size: 16px; line-height: 1.5; color: #ffffff; font-weight: 600;">
                                     Want more detailed analysis?
                                 </p>
-                                <a href="https://stock-market-dev.vercel.app/" style="display: inline-block; background-color: #48bb78; color: #ffffff; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-size: 14px; font-weight: 500;">
+                                <a href="https://nocturn-kappa.vercel.app/" style="display: inline-block; background-color: #48bb78; color: #ffffff; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-size: 14px; font-weight: 500;">
                                     Explore Full Dashboard
                                 </a>
                             </div>
@@ -297,7 +297,7 @@ export const NEWS_SUMMARY_EMAIL_TEMPLATE = `<!DOCTYPE html>
                                 </p>
                                 <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important;">
                                     <a href="#" style="color: #48bb78 !important; text-decoration: underline;">Unsubscribe</a> | 
-                                    <a href="https://stock-market-dev.vercel.app/" style="color: #48bb78 !important; text-decoration: underline;">Visit Nocturn</a>
+                                    <a href="https://nocturn-kappa.vercel.app/" style="color: #48bb78 !important; text-decoration: underline;">Visit Nocturn</a>
                                 </p>
                                 <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important;">
                                     © 2025 Nocturn
@@ -498,7 +498,7 @@ export const STOCK_ALERT_UPPER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 30px;">
                                 <tr>
                                     <td align="center">
-                                        <a href="https://stock-market-dev.vercel.app/" style="display: block; width: 100%; max-width: 100%; box-sizing: border-box; color: #ffffff; background-color: #48bb78; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-size: 16px; font-weight: 500; line-height: 1; text-align: center; transition: background-color 0.3s ease;">
+                                        <a href="https://nocturn-kappa.vercel.app/" style="display: block; width: 100%; max-width: 100%; box-sizing: border-box; color: #ffffff; background-color: #48bb78; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-size: 16px; font-weight: 500; line-height: 1; text-align: center; transition: background-color 0.3s ease;">
                                             View Dashboard
                                         </a>
                                     </td>
@@ -512,7 +512,7 @@ export const STOCK_ALERT_UPPER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                                 </p>
                                 <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important;">
                                     <a href="#" style="color: #48bb78 !important; text-decoration: underline;">Unsubscribe</a> | 
-                                    <a href="https://stock-market-dev.vercel.app/" style="color: #48bb78 !important; text-decoration: underline;">Visit Nocturn</a>
+                                    <a href="https://nocturn-kappa.vercel.app/" style="color: #48bb78 !important; text-decoration: underline;">Visit Nocturn</a>
                                 </p>
                                 <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important;">
                                     © 2025 Nocturn
@@ -713,7 +713,7 @@ export const STOCK_ALERT_LOWER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 30px;">
                                 <tr>
                                     <td align="center">
-                                        <a href="https://stock-market-dev.vercel.app/" style="display: block; width: 100%; max-width: 100%; box-sizing: border-box; background-color: #48bb78; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-size: 16px; font-weight: 500; line-height: 1; text-align: center; transition: background-color 0.3s ease;">
+                                        <a href="https://nocturn-kappa.vercel.app/" style="display: block; width: 100%; max-width: 100%; box-sizing: border-box; background-color: #48bb78; color: #ffffff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-size: 16px; font-weight: 500; line-height: 1; text-align: center; transition: background-color 0.3s ease;">
                                             View Dashboard
                                         </a>
                                     </td>
@@ -727,7 +727,7 @@ export const STOCK_ALERT_LOWER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                                 </p>
                                 <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important;">
                                     <a href="#" style="color: #48bb78 !important; text-decoration: underline;">Unsubscribe</a> | 
-                                    <a href="https://stock-market-dev.vercel.app/" style="color: #48bb78 !important; text-decoration: underline;">Visit Nocturn</a>
+                                    <a href="https://nocturn-kappa.vercel.app/" style="color: #48bb78 !important; text-decoration: underline;">Visit Nocturn</a>
                                 </p>
                                 <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important;">
                                     © 2025 Nocturn
@@ -929,7 +929,7 @@ export const VOLUME_ALERT_EMAIL_TEMPLATE = `<!DOCTYPE html>
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 30px;">
                                 <tr>
                                     <td align="center">
-                                        <a href="https://stock-market-dev.vercel.app/" style="display: inline-block; background-color: #48bb78; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 16px; font-weight: 500; line-height: 1; transition: background-color 0.3s ease;">
+                                        <a href="https://nocturn-kappa.vercel.app/" style="display: inline-block; background-color: #48bb78; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 16px; font-weight: 500; line-height: 1; transition: background-color 0.3s ease;">
                                             View Dashboard
                                         </a>
                                     </td>
@@ -950,7 +950,7 @@ export const VOLUME_ALERT_EMAIL_TEMPLATE = `<!DOCTYPE html>
                                 </p>
                                 <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important;">
                                     <a href="#" style="color: #48bb78 !important; text-decoration: underline;">Unsubscribe</a> | 
-                                    <a href="https://stock-market-dev.vercel.app/" style="color: #48bb78 !important; text-decoration: underline;">Visit Nocturn</a>
+                                    <a href="https://nocturn-kappa.vercel.app/" style="color: #48bb78 !important; text-decoration: underline;">Visit Nocturn</a>
                                 </p>
                                 <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important;">
                                     © 2025 Nocturn

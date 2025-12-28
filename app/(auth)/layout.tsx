@@ -15,7 +15,8 @@ const Layout = async ({children}:{children : React.ReactNode}) => {
   return (
     // Ensure the main container is exactly the height of the screen
     <main className="auth-layout h-screen overflow-hidden">
-      <section className="auth-left-section flex flex-col p-6 lg:p-10 h-full">
+      {/* Left section - Form (always visible, full width on mobile) */}
+      <section className="auth-left-section flex flex-col p-6 lg:p-10 h-full w-full lg:w-1/2">
         <Link href="/" className="auth-logo mb-auto">
           <Image src={logo} alt="Logo" width={140} height={32}/>
         </Link>
@@ -31,7 +32,8 @@ const Layout = async ({children}:{children : React.ReactNode}) => {
         <div className="mt-auto" />
       </section>
 
-      <section className="auth-right-section h-full">
+      {/* Right section - Galaxy background (hidden on mobile) */}
+      <section className="auth-right-section h-full hidden lg:flex lg:w-1/2">
         <GalaxyBackground>
           <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center z-20">
             <div className="max-w-md">

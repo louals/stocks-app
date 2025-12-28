@@ -14,37 +14,32 @@ const Layout = async ({children}:{children : React.ReactNode}) => {
   
   return (
     // Ensure the main container is exactly the height of the screen
-    <main className="auth-layout h-screen overflow-hidden">
-      {/* Left section - Form (always visible, full width on mobile) */}
-      <section className="auth-left-section flex flex-col p-6 lg:p-10 h-full w-full lg:w-1/2">
-        <Link href="/" className="auth-logo mb-auto">
-          <Image src={logo} alt="Logo" width={140} height={32}/>
-        </Link>
+    <main className="auth-layout h-screen w-full flex overflow-hidden">
+  {/* Left section */}
+  <section className="flex flex-col p-6 lg:p-10 h-full w-full lg:w-1/2 shrink-0">
+    <Link href="/" className="mb-auto">
+      <Image src={logo} alt="Logo" width={140} height={32} priority />
+    </Link>
 
-        {/* This div now centers your SignIn/SignUp forms vertically and horizontally */}
-        <div className="flex-1 flex flex-col justify-center items-center w-full">
-            <div className="w-full max-w-md">
-                {children}
-            </div>
+    <div className="flex-1 flex flex-col justify-center items-center">
+        <div className="w-full max-w-md">
+            {children}
         </div>
+    </div>
+    <div className="mt-auto" />
+  </section>
 
-        {/* Keeps the layout balanced by pushing the logo to the top and footer to bottom */}
-        <div className="mt-auto" />
-      </section>
-
-      {/* Right section - Galaxy background (hidden on mobile) */}
-      <section className="auth-right-section h-full hidden lg:flex lg:w-1/2">
-        <GalaxyBackground>
-          <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center z-20">
-            <div className="max-w-md">
-              <p className="text-gray-300 text-lg">
-                Sign up to explore the cosmic possibilities of financial management
-              </p>
-            </div>
-          </div>
-        </GalaxyBackground>
-      </section>
-    </main>
+  {/* Right section - Guaranteed hidden below 1024px */}
+  <section className="hidden lg:block lg:w-1/2 h-full relative border-l border-white/10">
+    <GalaxyBackground>
+      <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center z-20">
+        <p className="text-gray-300 text-lg max-w-md">
+          Sign up to explore the cosmic possibilities of financial management
+        </p>
+      </div>
+    </GalaxyBackground>
+  </section>
+</main>
   )
 }
 

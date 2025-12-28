@@ -14,7 +14,7 @@ const Layout = async ({children}:{children : React.ReactNode}) => {
   
   return (
     // Ensure the main container is exactly the height of the screen
-    <main className="auth-layout h-screen w-full flex overflow-hidden">
+    <main className="bg-black min-h-screen w-full flex lg:overflow-hidden lg:h-screen">
   {/* Left section */}
   <section className="flex flex-col p-6 lg:p-10 h-full w-full lg:w-1/2 shrink-0">
     <Link href="/" className="mb-auto">

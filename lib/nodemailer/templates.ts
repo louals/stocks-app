@@ -17,8 +17,7 @@ export const WELCOME_EMAIL_TEMPLATE = `<!DOCTYPE html>
     </noscript>
     <![endif]-->
     <style type="text/css">
-        /* Dark mode styles */
-        @media (prefers-color-scheme: dark) {
+        
             .email-container {
                 background-color: #141414 !important;
                 border: 1px solid #30333A !important;
@@ -38,7 +37,6 @@ export const WELCOME_EMAIL_TEMPLATE = `<!DOCTYPE html>
             .dark-border {
                 border-color: #30333A !important;
             }
-        }
         
         @media only screen and (max-width: 600px) {
             .email-container {
@@ -180,8 +178,7 @@ export const NEWS_SUMMARY_EMAIL_TEMPLATE = `<!DOCTYPE html>
     </noscript>
     <![endif]-->
     <style type="text/css">
-        /* Dark mode styles */
-        @media (prefers-color-scheme: dark) {
+       
             .email-container {
                 background-color: #141414 !important;
                 border: 1px solid #30333A !important;
@@ -205,7 +202,7 @@ export const NEWS_SUMMARY_EMAIL_TEMPLATE = `<!DOCTYPE html>
                 background-color: #1f2937 !important;
                 border: 1px solid #374151 !important;
             }
-        }
+        
         
         @media only screen and (max-width: 600px) {
             .email-container {
@@ -333,7 +330,7 @@ export const STOCK_ALERT_UPPER_EMAIL_TEMPLATE = `<!DOCTYPE html>
     <![endif]-->
     <style type="text/css">
         /* Dark mode styles */
-        @media (prefers-color-scheme: dark) {
+        
             .email-container {
                 background-color: #141414 !important;
                 border: 1px solid #30333A !important;
@@ -357,7 +354,7 @@ export const STOCK_ALERT_UPPER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                 background-color: #1f2937 !important;
                 border: 1px solid #374151 !important;
             }
-        }
+      
         
         @media only screen and (max-width: 600px) {
             .email-container {
@@ -547,8 +544,7 @@ export const STOCK_ALERT_LOWER_EMAIL_TEMPLATE = `<!DOCTYPE html>
     </noscript>
     <![endif]-->
     <style type="text/css">
-        /* Dark mode styles */
-        @media (prefers-color-scheme: dark) {
+       
             .email-container {
                 background-color: #141414 !important;
                 border: 1px solid #30333A !important;
@@ -572,7 +568,7 @@ export const STOCK_ALERT_LOWER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                 background-color: #1f2937 !important;
                 border: 1px solid #374151 !important;
             }
-        }
+        
         
         @media only screen and (max-width: 600px) {
             .email-container {
@@ -763,7 +759,7 @@ export const VOLUME_ALERT_EMAIL_TEMPLATE = `<!DOCTYPE html>
     <![endif]-->
     <style type="text/css">
         /* Dark mode styles */
-        @media (prefers-color-scheme: dark) {
+      
             .email-container {
                 background-color: #141414 !important;
                 border: 1px solid #30333A !important;
@@ -787,7 +783,7 @@ export const VOLUME_ALERT_EMAIL_TEMPLATE = `<!DOCTYPE html>
                 background-color: #1f2937 !important;
                 border: 1px solid #374151 !important;
             }
-        }
+      
         
         @media only screen and (max-width: 600px) {
             .email-container {
@@ -985,8 +981,7 @@ export const INACTIVE_USER_REMINDER_EMAIL_TEMPLATE = `<!DOCTYPE html>
     </noscript>
     <![endif]-->
     <style type="text/css">
-        /* Dark mode styles */
-        @media (prefers-color-scheme: dark) {
+        
             .email-container {
                 background-color: #141414 !important;
                 border: 1px solid #30333A !important;
@@ -1010,7 +1005,7 @@ export const INACTIVE_USER_REMINDER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                 background-color: #1f2937 !important;
                 border: 1px solid #374151 !important;
             }
-        }
+       
         
         @media only screen and (max-width: 600px) {
             .email-container {

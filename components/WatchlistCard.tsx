@@ -9,13 +9,13 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 interface WatchlistCardProps {
-  item: {
-    _id: string;
-    symbol: string;
-    company: string;
-    addedAt: string;
-  };
-}
+    item: {
+      _id: string | any; // Accept string or any (for ObjectId)
+      symbol: string;
+      company: string;
+      addedAt: string;
+    };
+  }
 
 export function WatchlistCard({ item }: WatchlistCardProps) {
   const [isRemoving, setIsRemoving] = useState(false);
@@ -56,7 +56,7 @@ export function WatchlistCard({ item }: WatchlistCardProps) {
                 company={item.company}
                 isInWatchlist={true}
                 type="icon"
-                className="flex-shrink-0"
+                className="shrink-0"
               />
             </div>
             <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 truncate">
@@ -74,7 +74,7 @@ export function WatchlistCard({ item }: WatchlistCardProps) {
       </div>
       
       {/* TradingView widget section */}
-      <div className="flex-1 p-2 min-h-[150px]">
+      <div className="flex-1 p-2 min-h-37.5">
         <TradingViewWidget
           scriptUrl={`${scriptUrl}symbol-info.js`}
           config={{

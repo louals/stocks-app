@@ -137,3 +137,16 @@ export const getFormattedTodayDate = () => new Date().toLocaleDateString('en-US'
   day: 'numeric',
   timeZone: 'UTC',
 });
+
+export function transformWatchlistItem(item: any) {
+  return {
+    _id: item._id.toString(),
+    symbol: item.symbol,
+    company: item.company,
+    addedAt: new Date(item.addedAt).toISOString()
+  };
+}
+
+export function transformWatchlistItems(items: any[]) {
+  return items.map(transformWatchlistItem);
+}

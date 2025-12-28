@@ -8,15 +8,19 @@ import { getUserWatchlist } from "@/lib/actions/watchlist";
 import { MARKET_OVERVIEW_WIDGET_CONFIG } from "@/lib/constants";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { transformWatchlistItems } from "@/lib/utils";
+
 
 export default async function WatchlistPage() {
   const { authenticated, user } = await verifySession();
-  
+  // In your component
+    
   if (!authenticated || !user) {
     redirect('/sign-in');
   }
   
   const watchlistItems = await getUserWatchlist();
+  const transformedItems = transformWatchlistItems(watchlistItems);
   const scriptUrl = `https://s3.tradingview.com/external-embedding/embed-widget-`;
 
   return (
@@ -26,11 +30,11 @@ export default async function WatchlistPage() {
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white">My Watchlist</h1>
         <p className="text-gray-600 dark:text-gray-400 mt-2">
           Track and manage your favorite stocks
-          {watchlistItems.length > 0 && ` • ${watchlistItems.length} item${watchlistItems.length !== 1 ? 's' : ''}`}
+          {transformedItems.length > 0 && ` • ${transformedItems.length} item${transformedItems.length !== 1 ? 's' : ''}`}
         </p>
       </div>
 
-      {watchlistItems.length === 0 ? (
+      {transformedItems.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-12 text-center border-2 border-dashed rounded-lg">
           <div className="mb-4">
             <svg className="w-20 h-20 mx-auto text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -61,7 +65,7 @@ export default async function WatchlistPage() {
                 tabs: [
                   {
                     title: "Watchlist",
-                    symbols: watchlistItems.map(item => ({
+                    symbols: transformedItems.map(item => ({
                       s: item.symbol,
                       d: item.company
                     }))
@@ -85,7 +89,7 @@ export default async function WatchlistPage() {
 
           {/* Watchlist Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-8">
-            {watchlistItems.map((item) => (
+            {transformedItems.map((item) => (
               <WatchlistCard 
                 key={item._id.toString()} 
                 item={item} 
